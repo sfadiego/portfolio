@@ -1,0 +1,218 @@
+extends layout
+block content
+  header.header_area
+    div.main_menu
+      nav.navbar.navbar-expand-lg.navbar-light
+        div.container
+          a(href='#').navbar-brand.logo_h
+            img(src="images/logo.png")
+          button(type="button", class="navbar-toggler" data-toggle="collapse",data-target="#navbarSupportedContent", aria-controls="navbarSupportedContent", aria-expanded="false", aria-label="Toggle navigation")
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          div.collapse.navbar-collapse.offset#navbarSupportedContent
+            ul.nav.navbar-nav.menu_nav.justify-content-end
+              li.nav-item.active
+                a(href="#" class="nav-link") Home
+              li.nav-item
+                a(href="#" class="nav-link") Portfolio
+              li.nav-item
+                a(href="#" class="nav-link") Contact
+
+  section.home_banner_area
+    div.banner_inner
+      div.container
+        div.row
+          div.col-lg-7
+            div.banner_content
+              h3.text-uppercase Bienvenido
+              h1.text-uppercase Diego silva
+              h5.text-uppercase Fullstack web developer
+              div.d-flex.align-items-center
+                a(href="#" class="primary_btn")
+                  span Hire Me
+                a(href="#" class="primary_btn")
+                  span Download CV
+          div.col-lg-5
+            div.home_right_img
+              img(src="images/banner/home-right.png", alt="Home")
+  section.about_area.section_gap
+    div.container
+      div.row.justify-content-start.align-items-center
+        div.col-lg-5
+          div.about_img
+            img(src="images/about-us.png", alt="")
+        div.offset-lg-1.col-lg-5
+          div.main_title.text-left
+            h2 Sobre mi
+            p.
+              Soy un programador de software proactivo con hambre de crecer profesionalmente, disfruto conocer las tendencias y buenas practicas 
+              que hacen a un buen profesional de las TI.
+            p.
+              Durante algunos años he trabajado como desarrollador web Fullstack para el sector público y startups.
+              Las tecnolgia en las que he trabajado mayormente es PHP con sus frameworks y actualmente con  Nodejs Reactjs y Mongodb.
+            
+            p.
+              Tengo como objetivo aplicar el conocimiento y habilidades para desarrollarme como un buen profesional.
+            
+            a(href="#" class="primary_btn")
+              span Download CV
+
+  section.portfolio_area#portfolio
+    div.container
+      div.row
+        div.col-lg-12
+          div.main_title.text-left
+            h2 Proyectos
+      div.filters-content
+        div.row.portfolio-grid.justify-content-center
+          div.col-lg-4.col-md-6.all.latest
+            div.portfolio_box
+              div.single_portfolio
+                img(src="images/portfolio/colima.jpg", class="img-fluid w-100" alt="")
+                div.overlay
+                a(href="images/portfolio/colima.jpg" class="img-gal")
+                  div.icon
+                    span.lnr.lnr-cross
+              div.short_info
+                h4
+                  a(href="#") Gobierno de Colima
+                p sitio oficial de Gobierno de colima
+          div.col-lg-4.col-md-6.all.latest
+            div.portfolio_box
+              div.single_portfolio
+                img(src="images/portfolio/citro.jpg", class="img-fluid w-100" alt="")
+                div.overlay
+                a(href="images/portfolio/citro.jpg" class="img-gal")
+                  div.icon
+                    span.lnr.lnr-cross
+              div.short_info
+                h4
+                  a(href="http://www.citrojugo.com.mx/es/") Citrojugo
+                p Compañia que produce derivados de limón
+          div.col-lg-4.col-md-6.all.latest
+            div.portfolio_box
+              div.single_portfolio
+                img(src="images/portfolio/mejoraclick.jpg", class="img-fluid w-100" alt="")
+                div.overlay
+                a(href="images/portfolio/mejoraclick.jpg" class="img-gal")
+                  div.icon
+                    span.lnr.lnr-cross
+              div.short_info
+                h4
+                  a(href="http://www.citrojugo.com.mx/es/") Mejoraclick
+                p Sistema de reportes ciudadanos
+          div.col-lg-4.col-md-6.all.latest
+            div.portfolio_box
+              div.single_portfolio
+                img(src="images/portfolio/ternium.jpg", class="img-fluid w-100" alt="")
+                div.overlay
+                a(href="images/portfolio/ternium.jpg" class="img-gal")
+                  div.icon
+                    span.lnr.lnr-cross
+              div.short_info
+                h4
+                  a(href="https://mx.ternium.com/es/productos/perfiles/perfil-zintro?gclid=CJLQ89ro-tYCFZe4wAodfHUOtQ") Zintroalum
+                p Sitio Zintroalum de Ternium
+          div.col-lg-4.col-md-6.all.latest
+            div.portfolio_box
+              div.single_portfolio
+                img(src="images/portfolio/chantico.jpg", class="img-fluid w-100" alt="")
+                div.overlay
+                a(href="images/portfolio/chantico.jpg" class="img-gal")
+                  div.icon
+                    span.lnr.lnr-cross
+              div.short_info
+                h4
+                  a(href="#") Chantico
+                p Punto de venta cafeteria (En proceso)
+          div.col-lg-4.col-md-6.all.latest
+            div.portfolio_box
+              div.single_portfolio
+                img(src="images/portfolio/techint.jpg", class="img-fluid w-100" alt="")
+                div.overlay
+                a(href="images/portfolio/techint.jpg" class="img-gal")
+                  div.icon
+                    span.lnr.lnr-cross
+              div.short_info
+                h4
+                  a(href="http://grupotechint.com.mx/") Techint
+                p Grupo Techint en mexico
+          div.col-lg-4.col-md-6.all.latest
+            div.portfolio_box
+              div.single_portfolio
+                img(src="images/portfolio/segundoinforme.jpg", class="img-fluid w-100" alt="")
+                div.overlay
+                a(href="images/portfolio/segundoinforme.jpg" class="img-gal")
+                  div.icon
+                    span.lnr.lnr-cross
+              div.short_info
+                h4
+                  a(href="http://www.2doinforme2017.col.gob.mx/") 2do informe de gobierno
+                p 2do informe de labores Colima
+          div.col-lg-4.col-md-6.all.latest
+            div.portfolio_box
+              div.single_portfolio
+                img(src="images/portfolio/colimalogo.jpg", class="img-fluid w-100" alt="")
+                div.overlay
+                a(href="images/portfolio/colimalogo.jpg" class="img-gal")
+                  div.icon
+                    span.lnr.lnr-cross
+              div.short_info
+                h4
+                  a(href="http://www.consultapublica.col.gob.mx/") Consulta pública
+                p Consulta pública ciudadana
+          div.col-lg-4.col-md-6.all.latest
+            div.portfolio_box
+              div.single_portfolio
+                img(src="images/portfolio/3erinforme.jpg", class="img-fluid w-100" alt="")
+                div.overlay
+                a(href="images/portfolio/3erinforme.jpg" class="img-gal")
+                  div.icon
+                    span.lnr.lnr-cross
+              div.short_info
+                h4
+                  a(href="http://www.consultapublica.col.gob.mx/") 3er informe de gobierno de colima
+                p 3er informe de labores del gobierno de colima
+          div.col-lg-4.col-md-6.all.latest
+            div.portfolio_box
+              div.single_portfolio
+                img(src="images/portfolio/colimalogo.jpg", class="img-fluid w-100" alt="")
+                div.overlay
+                a(href="images/portfolio/colimalogo.jpg" class="img-gal")
+                  div.icon
+                    span.lnr.lnr-cross
+              div.short_info
+                h4
+                  a(href="http://www.estadisticostramites.col.gob.mx/Estadisticos/page3.do?cbck=wrReq0292") Estadisticos y Tramites en linea
+                p Estadisticos sobre Tramites en linea
+          div.col-lg-4.col-md-6.all.latest
+            div.portfolio_box
+              div.single_portfolio
+                img(src="images/portfolio/evantra.jpg", class="img-fluid w-100" alt="")
+                div.overlay
+                a(href="images/portfolio/evantra.jpg" class="img-gal")
+                  div.icon
+                    span.lnr.lnr-cross
+              div.short_info
+                h4
+                  a(href="#") Evantrasoft
+                p Sistema de gestion de personal del C3 colima
+
+
+  //- ================Footer Area =================
+  footer.footer_area
+    div.container
+      div.row.justify-content-center
+        div.col-lg-12
+          div.footer_top.flex-column
+            div.footer_logo
+              h4 Follow Me
+            div.footer_social
+              a(href='https://www.facebook.com/sfadiegosilva')
+                i.fa.fa-facebook(aria-hidden='true')
+              a(href='https://www.linkedin.com/in/diego-armando-silva-facio-0051a911a/')
+                i.fa.fa-linkedin(aria-hidden='true')
+              a(href='https://twitter.com/sfadiego')
+                i.fa.fa-twitter(aria-hidden='true')
+//-================Footer Area =================
