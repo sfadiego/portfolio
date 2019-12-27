@@ -15,5 +15,4 @@ i worked for the public sector but also in startups with presence in Mexico and 
 
 Most of the time i worked with PHP (codeigniter and laravel) but in this moment i'm working with the Javascript Stack (Nodejs Reactjs and Mongodb)
 
-I like learn and put in practice the clean code and trends of IT in future projects 
-and share the knowledge as a good professional in the area does.
+I like learn and put in practice the clean code and trends of IT in future projects, share the knowledge as a good professional in the area does.

@@ -1,217 +1,186 @@
 extends layout
+
 block content
   header.header_area
     div.main_menu
       nav.navbar.navbar-expand-lg.navbar-light
         div.container
-          a(href='#').navbar-brand.logo_h
-            img(src="images/logo.png")
-          button(type="button", class="navbar-toggler" data-toggle="collapse",data-target="#navbarSupportedContent", aria-controls="navbarSupportedContent", aria-expanded="false", aria-label="Toggle navigation")
+          a(href="#", title="title").navbar-brand
+            img(src="/img/brand.png", alt="logo")
+          button(type="button",class="navbar-toggler",data-toggle="collapse", data-target="#navbarSupportedContent", aria-controls="navbarSupportedContent", aria-expanded="false", aria-label="Toggle navigation")
             span.icon-bar
             span.icon-bar
             span.icon-bar
           div.collapse.navbar-collapse.offset#navbarSupportedContent
             ul.nav.navbar-nav.menu_nav.justify-content-end
               li.nav-item.active
-                a(href="#" class="nav-link") Home
+                a(href="#").nav-link Home
               li.nav-item
-                a(href="#" class="nav-link") Portfolio
+                a(href="#work").nav-link Portfolio
               li.nav-item
-                a(href="#" class="nav-link") Contact
-
-  section.home_banner_area
-    div.banner_inner
+                a(href="#about").nav-link About
+              li.nav-item
+                a(href="#").nav-link Contact
+              
+  section.banner-area.owl-carousel#home
+    div.single_slide_banner.slide_bg1
       div.container
-        div.row
-          div.col-lg-7
-            div.banner_content
-              h3.text-uppercase Bienvenido
-              h1.text-uppercase Diego silva
-              h5.text-uppercase Fullstack web developer
-              div.d-flex.align-items-center
-                a(href="/downloadcv" download target="_blank" class="primary_btn")
-                  span Download CV
-          div.col-lg-5
-            div.home_right_img
-              img(src="images/banner/home-right.png", alt="Home")
-  section.about_area.section_gap
+        div.row.fullscreen.d-flex.align-items-center
+          div.banner-content.col-lg-12.justify-content-center
+            h1 Diego Silva
+            h3 Personal Portfolio
+            a(href="#", target="_blank", rel="noopener noreferrer").primary-btn Contact
+    div.single_slide_banner.slide_bg2
+      div.container
+        div.row.fullscreen.d-flex.align-items-center
+          div.banner-content.col-lg-12.justify-content-center
+            h1 Diego silva
+            h3 Personal portfolio Website
+            a(href="#", target="_blank", rel="noopener noreferrer").primary-btn Contact
+
+  section.section_gap.portfolio_area#work
     div.container
-      div.row.justify-content-start.align-items-center
-        div.col-lg-5
-          div.about_img
-            img(src="images/about-us.png", alt="")
-        div.offset-lg-1.col-lg-5
-          div.main_title.text-left
-            h2 Sobre mi
+      div.row.justify-content-center
+        div.col-lg-6.text-center
+          div.main-title
+            h1 Latest Works
+            p. 
+              Algunos de los proyectos en los que he colaborado 
+
+      div.row.justify-content-center
+        div.col-lg-10
+          div.projects_fillter
+            ul.filter.list
+              li(data-filter="*").active All Categories
+              li(data-filter=".web") Web
+              li(data-filter=".wordpress") Wordpress
+              li(data-filter=".webdesign") Web Design
+      div.projects_inner.row.grid
+        div.grid-sizer.col-sm-6.col-md-3.col-lg-3
+        div.col-lg-6.col-sm-6.col-sm-12.web.grid-item
+          div.projects_item
+            img(src="/img/portfolio/colimaestado.jpg").img-fluid.w-100
+            div.projects_text
+              a(href="http://www.col.gob.mx/", target="_blank")
+                h4 Colima estado
+              p.
+                Sitio oficial Gobierno de colima
+        div.col-lg-3.col-sm-6.col-sm-12.web.grid-item
+          div.projects_item
+            img(src="/img/portfolio/evantra.jpg").img-fluid.w-100
+            div.projects_text
+              a(href="#", target="_blank")
+                h4 Evantrasoft
+              p.
+                Sitio para gestion de personal C3 colima
+        div.col-lg-3.col-sm-6.col-sm-12.web.grid-item
+          div.projects_item
+            img(src="/img/portfolio/chantico.jpg").img-fluid.w-100
+            div.projects_text
+              a(href="#chantico", target="_blank")
+                h4 Chantico
+              p.
+                Punto de venta para cafeteria 
+        div.col-lg-6.col-sm-6.col-sm-12.web.grid-item
+          div.projects_item
+            img(src="/img/portfolio/tercerinformecolima.jpg").img-fluid.w-100
+            div.projects_text
+              a(href="http://www.tercerinforme.col.gob.mx/", target="_blank")
+                h4 3er informe de gobierno
+              p.
+                Informe de gobierno Colima
+        div.col-lg-6.col-sm-6.web.grid-item
+          div.projects_item
+            img(src="/img/portfolio/mejoraclick.jpg").img-fluid.w-100
+            div.projects_text
+              a(href="#", target="_blank")
+                h4 Mejoraclick
+              p.
+                Sitio para denuncias ciudadanas 
+        div.col-lg-3.col-sm-6.web.grid-item
+          div.projects_item
+            img(src="/img/portfolio/2doinforme.jpg").img-fluid.w-100
+            div.projects_text
+              a(href="http://www.2doinforme2017.col.gob.mx/", target="_blank")
+                h4 2do informe de gobierno
+              p.
+                Informe de gobierno de colima
+        div.col-lg-3.col-sm-6.wordpress.web.grid-item
+          div.projects_item
+            img(src="/img/portfolio/work6.jpg").img-fluid.w-100
+            div.projects_text
+              a(href="http://www.citrojugo.com.mx/", target="_blank")
+                h4 Citrojugo
+              p.
+                Productora derivados del limon
+        div.col-lg-6.col-sm-6.web.webdesign.grid-item
+          div.projects_item
+            img(src="/img/portfolio/ternium.jpg").img-fluid.w-100
+            div.projects_text
+              a(href="https://mx.ternium.com/es/productos/perfiles/perfil-zintro?gclid=CJLQ89ro-tYCFZe4wAodfHUOtQ", target="_blank")
+                h4 Zintroalum
+              p.
+                Sitio zintroalum de ternium
+        div.col-lg-2.col-sm-6.web.grid-item
+          div.projects_item
+            img(src="/img/portfolio/colima.jpg").img-fluid.w-100
+            div.projects_text
+              a(href="http://www.consultapublica.col.gob.mx/", target="_blank")
+                h4 Consulta publica
+              p.
+                Consulta publica del gobierno del estado
+        div.col-lg-2.col-sm-6.web.grid-item
+          div.projects_item
+            img(src="/img/portfolio/estadisticos.jpg").img-fluid.w-100
+            div.projects_text
+              a(href="http://www.estadisticostramites.col.gob.mx/Estadisticos/page1.do", target="_blank")
+                h4 Estadisticos
+              p.
+                Contador de tramites
+        div.col-lg-2.col-sm-6.wordpress.web.grid-item
+          div.projects_item
+            img(src="/img/portfolio/techint.jpg").img-fluid.w-100
+            div.projects_text
+              a(href="http://grupotechint.com.mx/", target="_blank")
+                h4 Techint
+              p.
+                Grupo Techint en mexico
+
+  section.about-area.section_gap.gray-bg
+    div.container#about
+      div.row.align-items-center.justify-content-between
+        div.col-lg-5.about-left
+          img(src="/img/about-img.png", alt="").img-fluid
+        div.col-lg-6.col-md-12.about-right
+          div.main-title.text-left
+            h1 About myself
+          div(data-wow-duration=".8s").mb-50.wow.fadeIn
             p.
               At present i have more than 5 years of experience in the software development, I enjoy work in the backend and frontend.
               i worked for the public sector but also in startups with presence in Mexico and Latin America creating amazing projects.
-
             p.
               Most of the time i worked with PHP (codeigniter and laravel) but in this moment i'm working with the Javascript Stack (Nodejs Reactjs and Mongodb)
-
             p.
-              I like learn and put in practice the clean code and trends of IT in future projects 
-              and share the knowledge as a good professional in the area does.
-            
-            a(href="/downloadcv" class="primary_btn")
-              span Download CV
+              I like learn and put in practice the clean code and trends of IT in future projects, share the knowledge as a good professional in the area does.
+          a(href="/downloadcv", download title="title").primary-btn Download CV
 
-  section.portfolio_area#portfolio
+  footer.footer_area.section_gap
     div.container
-      div.row
-        div.col-lg-12
-          div.main_title.text-left
-            h2 Proyectos
-      div.filters-content
-        div.row.portfolio-grid.justify-content-center
-          div.col-lg-4.col-md-6.all.latest
-            div.portfolio_box
-              div.single_portfolio
-                img(src="images/portfolio/colima.jpg", class="img-fluid w-100" alt="")
-                div.overlay
-                a(href="images/portfolio/colima.jpg" class="img-gal")
-                  div.icon
-                    span.lnr.lnr-cross
-              div.short_info
-                h4
-                  a(href="#") Gobierno de Colima
-                p sitio oficial de Gobierno de colima
-          div.col-lg-4.col-md-6.all.latest
-            div.portfolio_box
-              div.single_portfolio
-                img(src="images/portfolio/citro.jpg", class="img-fluid w-100" alt="")
-                div.overlay
-                a(href="images/portfolio/citro.jpg" class="img-gal")
-                  div.icon
-                    span.lnr.lnr-cross
-              div.short_info
-                h4
-                  a(href="http://www.citrojugo.com.mx/es/") Citrojugo
-                p Compañia que produce derivados de limón
-          div.col-lg-4.col-md-6.all.latest
-            div.portfolio_box
-              div.single_portfolio
-                img(src="images/portfolio/mejoraclick.jpg", class="img-fluid w-100" alt="")
-                div.overlay
-                a(href="images/portfolio/mejoraclick.jpg" class="img-gal")
-                  div.icon
-                    span.lnr.lnr-cross
-              div.short_info
-                h4
-                  a(href="http://www.citrojugo.com.mx/es/") Mejoraclick
-                p Sistema de reportes ciudadanos
-          div.col-lg-4.col-md-6.all.latest
-            div.portfolio_box
-              div.single_portfolio
-                img(src="images/portfolio/ternium.jpg", class="img-fluid w-100" alt="")
-                div.overlay
-                a(href="images/portfolio/ternium.jpg" class="img-gal")
-                  div.icon
-                    span.lnr.lnr-cross
-              div.short_info
-                h4
-                  a(href="https://mx.ternium.com/es/productos/perfiles/perfil-zintro?gclid=CJLQ89ro-tYCFZe4wAodfHUOtQ") Zintroalum
-                p Sitio Zintroalum de Ternium
-          div.col-lg-4.col-md-6.all.latest
-            div.portfolio_box
-              div.single_portfolio
-                img(src="images/portfolio/chantico.jpg", class="img-fluid w-100" alt="")
-                div.overlay
-                a(href="images/portfolio/chantico.jpg" class="img-gal")
-                  div.icon
-                    span.lnr.lnr-cross
-              div.short_info
-                h4
-                  a(href="#") Chantico
-                p Punto de venta cafeteria (En proceso)
-          div.col-lg-4.col-md-6.all.latest
-            div.portfolio_box
-              div.single_portfolio
-                img(src="images/portfolio/techint.jpg", class="img-fluid w-100" alt="")
-                div.overlay
-                a(href="images/portfolio/techint.jpg" class="img-gal")
-                  div.icon
-                    span.lnr.lnr-cross
-              div.short_info
-                h4
-                  a(href="http://grupotechint.com.mx/") Techint
-                p Grupo Techint en mexico
-          div.col-lg-4.col-md-6.all.latest
-            div.portfolio_box
-              div.single_portfolio
-                img(src="images/portfolio/segundoinforme.jpg", class="img-fluid w-100" alt="")
-                div.overlay
-                a(href="images/portfolio/segundoinforme.jpg" class="img-gal")
-                  div.icon
-                    span.lnr.lnr-cross
-              div.short_info
-                h4
-                  a(href="http://www.2doinforme2017.col.gob.mx/") 2do informe de gobierno
-                p 2do informe de labores Colima
-          div.col-lg-4.col-md-6.all.latest
-            div.portfolio_box
-              div.single_portfolio
-                img(src="images/portfolio/colimalogo.jpg", class="img-fluid w-100" alt="")
-                div.overlay
-                a(href="images/portfolio/colimalogo.jpg" class="img-gal")
-                  div.icon
-                    span.lnr.lnr-cross
-              div.short_info
-                h4
-                  a(href="http://www.consultapublica.col.gob.mx/") Consulta pública
-                p Consulta pública ciudadana
-          div.col-lg-4.col-md-6.all.latest
-            div.portfolio_box
-              div.single_portfolio
-                img(src="images/portfolio/3erinforme.jpg", class="img-fluid w-100" alt="")
-                div.overlay
-                a(href="images/portfolio/3erinforme.jpg" class="img-gal")
-                  div.icon
-                    span.lnr.lnr-cross
-              div.short_info
-                h4
-                  a(href="http://www.consultapublica.col.gob.mx/") 3er informe de gobierno de colima
-                p 3er informe de labores del gobierno de colima
-          div.col-lg-4.col-md-6.all.latest
-            div.portfolio_box
-              div.single_portfolio
-                img(src="images/portfolio/colimalogo.jpg", class="img-fluid w-100" alt="")
-                div.overlay
-                a(href="images/portfolio/colimalogo.jpg" class="img-gal")
-                  div.icon
-                    span.lnr.lnr-cross
-              div.short_info
-                h4
-                  a(href="http://www.estadisticostramites.col.gob.mx/Estadisticos/page3.do?cbck=wrReq0292") Estadisticos y Tramites en linea
-                p Estadisticos sobre Tramites en linea
-          div.col-lg-4.col-md-6.all.latest
-            div.portfolio_box
-              div.single_portfolio
-                img(src="images/portfolio/evantra.jpg", class="img-fluid w-100" alt="")
-                div.overlay
-                a(href="images/portfolio/evantra.jpg" class="img-gal")
-                  div.icon
-                    span.lnr.lnr-cross
-              div.short_info
-                h4
-                  a(href="#") Evantrasoft
-                p Sistema de gestion de personal del C3 colima
-
-
-  //- ================Footer Area =================
-  footer.footer_area
-    div.container
-      div.row.justify-content-center
-        div.col-lg-12
-          div.footer_top.flex-column
-            div.footer_logo
+      div.row.footer_inner.justify-content-center
+        div.col-lg-6.text-center
+          aside.f_widget.social_widget
+            div.f_logo
+              img(src="/img/brand.png", alt="")
+            div.f_title
               h4 Follow Me
-            div.footer_social
-              a(href='https://www.facebook.com/sfadiegosilva')
-                i.fa.fa-facebook(aria-hidden='true')
-              a(href='https://www.linkedin.com/in/diego-armando-silva-facio-0051a911a/')
-                i.fa.fa-linkedin(aria-hidden='true')
-              a(href='https://twitter.com/sfadiego')
-                i.fa.fa-twitter(aria-hidden='true')
-//-================Footer Area =================
+            ul.list
+              li
+                a(href="https://www.facebook.com/sfadiegosilva",target="_blank")
+                  i.fa.fa-facebook
+              li
+                a(href="https://twitter.com/sfadiego",target="_blank")
+                  i.fa.fa-twitter
+              li
+                a(href="https://www.linkedin.com/in/diego-armando-silva-facio-0051a911a/",target="_blank")
+                  i.fa.fa-linkedin
+
