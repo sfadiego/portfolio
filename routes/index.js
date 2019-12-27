@@ -1,9 +1,14 @@
-var express = require('express');
-var router = express.Router();
+const path = require('path');
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index');
-});
+module.exports = (app)=>{
+  
+  app.get('/', function(req, res, next) {
+    res.render('index');
+  });
 
-module.exports = router;
+  app.get('/downloadcv', function(req, res, next) {
+    let file = path.resolve(__dirname,'../public/filescv/cvdiego.pdf');
+    res.sendFile(file);
+  })
+
+};
