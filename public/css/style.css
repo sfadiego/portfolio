@@ -1867,17 +1867,17 @@ h6 {
   min-width: 800px; }
 
 .progress-table .serial {
-  width: 11.83%;
+  width: 30%;
   padding-left: 30px; }
 
 .progress-table .country {
-  width: 28.07%; }
+  width: 30%; }
 
 .progress-table .visit {
   width: 19.74%; }
 
 .progress-table .percentage {
-  width: 40.36%;
+  width: 60%;
   padding-right: 50px; }
 
 .progress-table .table-head {
@@ -1908,7 +1908,7 @@ h6 {
   margin-right: 15px; }
 
 .progress-table .table-row .percentage .progress {
-  width: 80%;
+  width: 100%;
   border-radius: 0px;
   background: transparent; }
 
