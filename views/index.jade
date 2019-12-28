@@ -1,26 +1,7 @@
 extends layout
 
 block content
-  header.header_area
-    div.main_menu
-      nav.navbar.navbar-expand-lg.navbar-light
-        div.container
-          a(href="#", title="title").navbar-brand
-            img(src="/img/brand.png", alt="logo")
-          button(type="button",class="navbar-toggler",data-toggle="collapse", data-target="#navbarSupportedContent", aria-controls="navbarSupportedContent", aria-expanded="false", aria-label="Toggle navigation")
-            span.icon-bar
-            span.icon-bar
-            span.icon-bar
-          div.collapse.navbar-collapse.offset#navbarSupportedContent
-            ul.nav.navbar-nav.menu_nav.justify-content-end
-              li.nav-item.active
-                a(href="#").nav-link Home
-              li.nav-item
-                a(href="#work").nav-link Portfolio
-              li.nav-item
-                a(href="#about").nav-link About
-              li.nav-item
-                a(href="#").nav-link Contact
+
               
   section.banner-area.owl-carousel#home
     div.single_slide_banner.slide_bg1
@@ -29,14 +10,14 @@ block content
           div.banner-content.col-lg-12.justify-content-center
             h1 Diego Silva
             h3 Personal Portfolio
-            a(href="#", target="_blank", rel="noopener noreferrer").primary-btn Contact
+            a(href="/contact", target="_blank", rel="noopener noreferrer").primary-btn Contact
     div.single_slide_banner.slide_bg2
       div.container
         div.row.fullscreen.d-flex.align-items-center
           div.banner-content.col-lg-12.justify-content-center
-            h1 Diego silva
-            h3 Personal portfolio Website
-            a(href="#", target="_blank", rel="noopener noreferrer").primary-btn Contact
+            h1 Diego Silva
+            h3 Personal Portfolio
+            a(href="/contact", target="_blank", rel="noopener noreferrer").primary-btn Contact
 
   section.section_gap.portfolio_area#work
     div.container
@@ -45,7 +26,7 @@ block content
           div.main-title
             h1 Latest Works
             p. 
-              Algunos de los proyectos en los que he colaborado 
+              Some of the projects that i collaborate
 
       div.row.justify-content-center
         div.col-lg-10
@@ -164,23 +145,4 @@ block content
               I like learn and put in practice the clean code and trends of IT in future projects, share the knowledge as a good professional in the area does.
           a(href="/downloadcv", download title="title").primary-btn Download CV
 
-  footer.footer_area.section_gap
-    div.container
-      div.row.footer_inner.justify-content-center
-        div.col-lg-6.text-center
-          aside.f_widget.social_widget
-            div.f_logo
-              img(src="/img/brand.png", alt="")
-            div.f_title
-              h4 Follow Me
-            ul.list
-              li
-                a(href="https://www.facebook.com/sfadiegosilva",target="_blank")
-                  i.fa.fa-facebook
-              li
-                a(href="https://twitter.com/sfadiego",target="_blank")
-                  i.fa.fa-twitter
-              li
-                a(href="https://www.linkedin.com/in/diego-armando-silva-facio-0051a911a/",target="_blank")
-                  i.fa.fa-linkedin
 
