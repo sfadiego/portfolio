@@ -23,13 +23,15 @@ block content
                             i.lnr.lnr-phone-handset
                             h6
                                 a(href="#") (312) 116 68 70
+                            p.
+                                
                         div.info_item
                             i.lnr.lnr-envelope
                             h6 sfadiego@gmail.com
                             p.
                                 Contacto
                 div.col-lg-9
-                    form(action="contact_process", method="post",novalidate="novalidate").row.contact_form#contactForm
+                    form(action="/submitemail", method="post",novalidate="novalidate").row.contact_form#contactForm
                         div.col-md-6
                             div.form-group
                                 input(type="text", name="name", placeholder="Enter your name").form-control#name
