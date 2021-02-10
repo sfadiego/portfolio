@@ -1,0 +1,74 @@
+doctype html
+html
+  head
+    title Diego silva Portfolio
+    link(rel='stylesheet', href='/css/bootstrap.css')
+    link(rel='stylesheet', href='/vendors/linericon/style.css')
+    link(rel='stylesheet', href='/css/font-awesome.min.css')
+    link(rel='stylesheet', href='/vendors/owl-carousel/owl.carousel.min.css')
+    link(rel='stylesheet', href='/css/magnific-popup.css')
+    link(rel='stylesheet', href='/vendors/nice-select/css/nice-select.css')
+    link(rel='stylesheet', href='/vendors/animate-css/animate.css')
+    link(rel='stylesheet', href='/vendors/flaticon/flaticon.css')
+    
+    link(rel='stylesheet', href='/css/style.css')
+  body
+    
+    header.header_area
+      div.main_menu
+        nav.navbar.navbar-expand-lg.navbar-light
+          div.container
+            a(href="#", title="title").navbar-brand
+              img(src="/img/brand.png", alt="logo")
+            button(type="button",class="navbar-toggler",data-toggle="collapse", data-target="#navbarSupportedContent", aria-controls="navbarSupportedContent", aria-expanded="false", aria-label="Toggle navigation")
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            div.collapse.navbar-collapse.offset#navbarSupportedContent
+              ul.nav.navbar-nav.menu_nav.justify-content-end
+                li.nav-item.active
+                  a(href="/").nav-link Home
+                li.nav-item
+                  a(href="/#work").nav-link Portfolio
+                li.nav-item
+                  a(href="/#about").nav-link About
+                li.nav-item
+                  a(href="/contact").nav-link Contact
+    block content
+    footer.footer_area.section_gap
+      div.container
+        div.row.footer_inner.justify-content-center
+          div.col-lg-6.text-center
+            aside.f_widget.social_widget
+              div.f_logo
+                img(src="/img/brand.png", alt="")
+              div.f_title
+                h4 Follow Me
+              ul.list
+                li
+                  a(href="https://www.facebook.com/sfadiegosilva",target="_blank")
+                    i.fa.fa-facebook
+                li
+                  a(href="https://twitter.com/sfadiego",target="_blank")
+                    i.fa.fa-twitter
+                li
+                  a(href="https://www.linkedin.com/in/diego-armando-silva-facio-0051a911a/",target="_blank")
+                    i.fa.fa-linkedin  
+
+
+    script(src="/javascripts/jquery-3.2.1.min.js")
+    script(src="/javascripts/popper.js")
+    script(src="/javascripts/bootstrap.min.js")
+    script(src="/javascripts/stellar.js")
+    script(src="/javascripts/jquery.magnific-popup.min.js")
+    script(src="/vendors/nice-select/js/jquery.nice-select.min.js")
+    script(src="/vendors/isotope/imagesloaded.pkgd.min.js")
+    script(src="/vendors/isotope/isotope-min.js")
+    script(src="/vendors/owl-carousel/owl.carousel.min.js")
+    script(src="/javascripts/jquery.ajaxchimp.min.js")
+    script(src="/javascripts/mail-script.js")
+    //- <!--gmaps Js-->
+    script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE")
+    script(src="/javascripts/gmaps.min.js")
+    script(src="/javascripts/theme.js")
+    

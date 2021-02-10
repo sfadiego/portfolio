@@ -1,0 +1,281 @@
+extends layout
+
+block content
+
+              
+  section.banner-area.owl-carousel#home
+    div.single_slide_banner.slide_bg1
+      div.container
+        div.row.fullscreen.d-flex.align-items-center
+          div.banner-content.col-lg-12.justify-content-center
+            h1 Diego Silva
+            h3 Personal Portfolio
+            a(href="/contact", rel="noopener noreferrer").primary-btn Contact
+    div.single_slide_banner.slide_bg2
+      div.container
+        div.row.fullscreen.d-flex.align-items-center
+          div.banner-content.col-lg-12.justify-content-center
+            h1 Diego Silva
+            h3 Personal Portfolio
+            a(href="/contact", rel="noopener noreferrer").primary-btn Contact
+
+  section.section_gap.portfolio_area#work
+    div.container
+      div.row.justify-content-center
+        div.col-lg-6.text-center
+          div.main-title
+            h1 Latest Works
+            p. 
+              Some projects where I collaborated
+
+      div.row.justify-content-center
+        div.col-lg-10
+          div.projects_fillter
+            ul.filter.list
+              li(data-filter="*").active All Categories
+              li(data-filter=".web") Web
+              li(data-filter=".wordpress") Wordpress
+              li(data-filter=".webdesign") Web Design
+      div.projects_inner.row.grid
+        div.grid-sizer.col-sm-6.col-md-3.col-lg-3
+        div.col-lg-6.col-sm-6.col-sm-12.web.webdesign.grid-item
+          div.projects_item
+            img(src="/img/portfolio/colimaestado.jpg").img-fluid.w-100
+            div.projects_text
+              a(href="http://www.col.gob.mx/", target="_blank")
+                h4 Colima estado
+              p.
+                Sitio oficial Gobierno de colima
+        div.col-lg-3.col-sm-6.col-sm-12.web.grid-item
+          div.projects_item
+            img(src="/img/portfolio/evantra.jpg").img-fluid.w-100
+            div.projects_text
+              a(href="#", target="_blank")
+                h4 Evantrasoft
+              p.
+                Sitio para gestion de personal C3 colima
+        div.col-lg-3.col-sm-6.col-sm-12.web.grid-item
+          div.projects_item
+            img(src="/img/portfolio/chantico.jpg").img-fluid.w-100
+            div.projects_text
+              a(href="#chantico", target="_blank")
+                h4 Chantico
+              p.
+                Punto de venta para cafeteria 
+        div.col-lg-3.col-sm-6.col-sm-12.web.grid-item
+          div.projects_item
+            img(src="/img/portfolio/sohex.png").img-fluid.w-100
+            div.projects_text
+              a(href="https://sohex.net/new-dms-hexade230320.sohex.net/login", target="_blank")
+                h4 DMS
+              p.
+                Sistema de administracion de articulos
+        div.col-lg-3.col-sm-6.col-sm-12.web.grid-item
+          div.projects_item
+            img(src="/img/portfolio/xehos.jpg").img-fluid.w-100
+            div.projects_text
+              a(href="https://xehos.com/xehos_web/login", target="_blank")
+                h4 Autolavado
+              p.
+                Sistema de agenda autolavado
+        div.col-lg-6.col-sm-6.col-sm-12.web.grid-item
+          div.projects_item
+            img(src="/img/portfolio/marti.jpg").img-fluid.w-100
+            div.projects_text
+              a(href="https://sae.universidadjosemarti.mx/auth/login", target="_blank")
+                h4 Universidad José Martí
+              p.
+                Sistema de control para calificaciones
+        div.col-lg-6.col-sm-6.web.grid-item
+          div.projects_item
+            img(src="/img/portfolio/creatools.jpg").img-fluid.w-100
+            div.projects_text
+              a(href="https://creatools.com.mx/", target="_blank")
+                h4 SDGM - Mazamitla
+              p.
+                Sistema de gestion municipal 
+        div.col-lg-6.col-sm-6.col-sm-12.web.grid-item
+          div.projects_item
+            img(src="/img/portfolio/tercerinformecolima.jpg").img-fluid.w-100
+            div.projects_text
+              a(href="http://www.tercerinforme.col.gob.mx/", target="_blank")
+                h4 3er informe de gobierno
+              p.
+                Informe de gobierno Colima
+        div.col-lg-6.col-sm-6.web.grid-item
+          div.projects_item
+            img(src="/img/portfolio/mejoraclick.jpg").img-fluid.w-100
+            div.projects_text
+              a(href="https://mejoraclick.colima.gob.mx/", target="_blank")
+                h4 Mejoraclick
+              p.
+                Sitio para denuncias ciudadanas 
+        div.col-lg-3.col-sm-6.web.grid-item
+          div.projects_item
+            img(src="/img/portfolio/2doinforme.jpg").img-fluid.w-100
+            div.projects_text
+              a(href="http://www.2doinforme2017.col.gob.mx/", target="_blank")
+                h4 2do informe de gobierno
+              p.
+                Informe de gobierno de colima
+        div.col-lg-3.col-sm-6.wordpress.web.webdesign.grid-item
+          div.projects_item
+            img(src="/img/portfolio/work6.jpg").img-fluid.w-100
+            div.projects_text
+              a(href="http://www.citrojugo.com.mx/", target="_blank")
+                h4 Citrojugo
+              p.
+                Productora derivados del limon
+        div.col-lg-6.col-sm-6.web.webdesign.grid-item
+          div.projects_item
+            img(src="/img/portfolio/ternium.jpg").img-fluid.w-100
+            div.projects_text
+              a(href="https://mx.ternium.com/es/productos/perfiles/perfil-zintro?gclid=CJLQ89ro-tYCFZe4wAodfHUOtQ", target="_blank")
+                h4 Zintroalum
+              p.
+                Sitio zintroalum de ternium
+        div.col-lg-2.col-sm-6.web.grid-item
+          div.projects_item
+            img(src="/img/portfolio/colima.jpg").img-fluid.w-100
+            div.projects_text
+              a(href="http://www.consultapublica.col.gob.mx/", target="_blank")
+                h4 Consulta publica
+              p.
+                Consulta publica del gobierno del estado
+        div.col-lg-2.col-sm-6.web.grid-item
+          div.projects_item
+            img(src="/img/portfolio/estadisticos.jpg").img-fluid.w-100
+            div.projects_text
+              a(href="http://www.estadisticostramites.col.gob.mx/Estadisticos/page1.do", target="_blank")
+                h4 Estadisticos
+              p.
+                Contador de tramites
+        div.col-lg-2.col-sm-6.wordpress.web.webdesign.grid-item
+          div.projects_item
+            img(src="/img/portfolio/techint.jpg").img-fluid.w-100
+            div.projects_text
+              a(href="http://grupotechint.com.mx/", target="_blank")
+                h4 Techint
+              p.
+                Grupo Techint en mexico
+
+  section.about-area.section_gap.gray-bg
+    div.container#about
+      div.row.align-items-center.justify-content-between
+        div.col-lg-5.about-left
+          img(src="/img/about-img-diego.png", alt="").img-fluid
+        div.col-lg-6.col-md-12.about-right
+          div.main-title.text-left
+            h1 About myself
+          div(data-wow-duration=".8s").mb-50.wow.fadeIn
+            p.
+              At present I have more than 5 years of experience in the web development, most of the time i've worked in the public sector but also in startups creating a lot of experience in the life cycle of software.
+            p.
+              I use the following technologies for backend:
+            ul
+              li PHP (Codeigniter, Laravel)
+              li Nodejs (Express)
+            p.
+              Also i work in frontend with:
+            ul
+              li React.js
+              li Backbone.js
+              li Jade "Template engine for Node"
+              li Bootstrap
+              li Css and Sass
+            p.
+              In databases I worked with:
+            ul
+              li Mysql
+              li Postgresql
+            p.
+              For Non Relational databases:
+            ul
+              li Mongodb
+            p.
+              Others technologies for version control and assets for web development:
+            ul
+              li GitHub and Bitbucket
+              li Photoshop
+              li Sketch
+
+          a(href="/downloadcv", download title="title").primary-btn Download CV
+
+  section.section-top-border
+    div.container
+      div.row
+        div.col-md-12
+          h3.mb-30.title_color Technical Skills
+          div.progress-table-wrap
+            div.progress-table
+              div.table-head
+                div.serial #
+                div.country Language
+                div.percentage Percentages
+              div.table-row
+                div.serial 01
+                div.country PHP
+                div.percentage
+                  div.progress
+                    div(role="progressbar", style="width: 90%",aria-valuenow="90",aria-valuemin="0", aria-valuemax="100").progress-bar.color-1
+              div.table-row
+                div.serial 02
+                div.country Reactjs
+                div.percentage
+                  div.progress
+                    div(role="progressbar", style="width: 85%",aria-valuenow="85",aria-valuemin="0", aria-valuemax="100").progress-bar.color-1
+              div.table-row
+                div.serial 03
+                div.country Nodejs
+                div.percentage
+                  div.progress
+                    div(role="progressbar", style="width: 85%",aria-valuenow="85",aria-valuemin="0", aria-valuemax="100").progress-bar.color-5
+              div.table-row
+                div.serial 04
+                div.country HTML
+                div.percentage
+                  div.progress
+                    div(role="progressbar", style="width: 100%",aria-valuenow="100",aria-valuemin="0", aria-valuemax="100").progress-bar.color-3
+              div.table-row
+                div.serial 05
+                div.country CSS y SASS
+                div.percentage
+                  div.progress
+                    div(role="progressbar", style="width: 90%",aria-valuenow="90",aria-valuemin="0", aria-valuemax="100").progress-bar.color-2
+              div.table-row
+                div.serial 06
+                div.country Photoshop y Sketch
+                div.percentage
+                  div.progress
+                    div(role="progressbar", style="width: 75%",aria-valuenow="60",aria-valuemin="0", aria-valuemax="100").progress-bar.color-2
+              div.table-row
+                div.serial 07
+                div.country Javascript 
+                div.percentage
+                  div.progress
+                    div(role="progressbar", style="width: 90%",aria-valuenow="90",aria-valuemin="0", aria-valuemax="100").progress-bar.color-1
+              div.table-row
+                div.serial 08
+                div.country Github y Bitbucket 
+                div.percentage
+                  div.progress
+                    div(role="progressbar", style="width: 90%",aria-valuenow="90",aria-valuemin="0", aria-valuemax="100").progress-bar.color-1
+              div.table-row
+                div.serial 09
+                div.country Mysql 
+                div.percentage
+                  div.progress
+                    div(role="progressbar", style="width: 80%",aria-valuenow="80",aria-valuemin="0", aria-valuemax="100").progress-bar.color-1
+              div.table-row
+                div.serial 10
+                div.country Mongodb 
+                div.percentage
+                  div.progress
+                    div(role="progressbar", style="width: 80%",aria-valuenow="80",aria-valuemin="0", aria-valuemax="100").progress-bar.color-1
+
+
+
+
+
+
+
