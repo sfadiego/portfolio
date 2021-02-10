@@ -1,0 +1,45 @@
+extends layout
+block content
+
+    section.banner_area
+        div.banner_inner.d-flex.align-items-center
+            div.container
+                div.banner_content.text-right
+                    h1 Contact Me
+                    div.page_link
+                        a(href="/") Home
+                        a(href="/") Contact
+    section.contact_area.section_gap
+        div.container
+            div.row
+                div.col-lg-3
+                    div.contact_info
+                        div.info_item
+                            i.lnr.lnr-home
+                            h6 Guillermo Prieto #152
+                            p.
+                                col. Guadalajarita Colima col.
+                        div.info_item
+                            i.lnr.lnr-phone-handset
+                            h6
+                                a(href="#") (312) 116 68 70
+                            p.
+                                
+                        div.info_item
+                            i.lnr.lnr-envelope
+                            h6 sfadiego@gmail.com
+                            p.
+                                Contacto
+                div.col-lg-9
+                    form(action="/submitemail", method="post",novalidate="novalidate").row.contact_form#contactForm
+                        div.col-md-6
+                            div.form-group
+                                input(type="text", name="name", placeholder="Enter your name").form-control#name
+                            div.form-group
+                                input(type="text", name="subject", placeholder="Enter Subject").form-control#subject
+                        div.col-md-6
+                            div.form-group
+                                textarea(name="message", rows="1",placeholder="Enter Message").form-control#message
+                        div.col-md-12.text-right
+                            button(type="submit", value="submit").primary-btn
+                                span Send message
