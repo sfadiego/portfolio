@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./template/styles.css">
@@ -14,7 +17,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg site-navbar navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg fixed-top site-navbar navbar-dark bg-dark">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -22,22 +25,25 @@
         <div class="collapse navbar-collapse justify-content-md-center" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#home">Inicio <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Portafolio</a>
+                    <a class="nav-link" href="#section-portfolio">Portafolio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Sobre mi</a>
+                    <a class="nav-link" href="#section-aboutmyself">Sobre mi</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contacto</a>
+                    <a class="nav-link" href="#section-skills">Habilidades</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacto">Contacto</a>
                 </li>
             </ul>
         </div>
     </nav>
     <!-- Slider -->
-    <section class="site-hero" style="background-image: url(./template/image_1.jpg);">
+    <section class="site-hero" id="home" style="background-image: url(./template/image_1.jpg);">
         <div class="container">
             <div class="row intro-text align-items-center justify-content-center">
                 <div class="col-md-10 text-center pt-5">
@@ -49,6 +55,41 @@
         </div>
     </section>
     <!-- Slider fin -->
+    <!-- Sobre mi -->
+    <section class="site-section " id="section-aboutmyself">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mb-2">
+                    <div class="section-heading text-center">
+                        <h2>Sobre mi </h2>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-2 text-center">
+                    <img class="img-fluid" src="./template/perfil.jpg" alt="perfil">
+                </div>
+                <div class="col-md-6 mb-2">
+                    <p class="text-white">
+                        Cuento con mas de 6 años de experiencia en el desarollo de aplicaciones. Actualmente trabajo
+                        con PHP como backend y Reactjs para frontend.
+                    </p>
+                    <p class="text-white">
+                        Los framework utilizados con PHP son <b> Laravel y Codeigniter</b>, sin embargo he tenido
+                        contacto con otros lenguajes como <b> Nodejs y Mongodb</b> en proyectos.
+                    </p>
+                    <p class="text-white">
+                        Disfruto trabajar tanto en Frontend como en Backend. Me considero una persona proactiva,
+                        resolutiva, con interés de aprender nuevas tecnologías mejorar mis habilidades y ponerlas en
+                        practica en proyectos futuros.
+                    </p>
+                    <p>
+                        <a style="border-radius: 0%;" target="_blank" href="./template/cv2021.pdf"
+                            class="btn btn-primary">Descargar CV</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Sobre mi, fin -->
     <!-- Portfolio -->
     <section class="site-section" id="section-portfolio">
         <div class="container">
@@ -93,7 +134,8 @@
                             </div>
                             <a href="#" class="img-pop-up">
                                 <div class="middle">
-                                    <div class="text align-self-center d-flex"><img src="./template/chantico.jpg" alt="">
+                                    <div class="text align-self-center d-flex"><img src="./template/chantico.jpg"
+                                            alt="">
                                     </div>
                                 </div>
                             </a>
@@ -111,7 +153,8 @@
                             </div>
                             <a href="https://sae.universidadjosemarti.mx/auth/login" target="_blank" class="img-pop-up">
                                 <div class="middle">
-                                    <div class="text align-self-center d-flex"><img src="./template/josemarti.jpg" alt="">
+                                    <div class="text align-self-center d-flex"><img src="./template/josemarti.jpg"
+                                            alt="">
                                     </div>
                                 </div>
                             </a>
@@ -129,7 +172,8 @@
                             </div>
                             <a href="https://mejoraclick.colima.gob.mx/" class="img-pop-up">
                                 <div class="middle">
-                                    <div class="text align-self-center d-flex"><img src="./template/mejoraclick.jpg" alt="">
+                                    <div class="text align-self-center d-flex"><img src="./template/mejoraclick.jpg"
+                                            alt="">
                                     </div>
                                 </div>
                             </a>
@@ -203,7 +247,8 @@
                             </div>
                             <a href="http://www.2doinforme2017.col.gob.mx/" class="img-pop-up">
                                 <div class="middle">
-                                    <div class="text align-self-center d-flex"><img src="./template/segundoinforme.jpg" alt="">
+                                    <div class="text align-self-center d-flex"><img src="./template/segundoinforme.jpg"
+                                            alt="">
                                     </div>
                                 </div>
                             </a>
@@ -221,7 +266,8 @@
                             </div>
                             <a href="https://citrojugo.com.mx/es/inicio/" target="_blank" class="img-pop-up">
                                 <div class="middle">
-                                    <div class="text align-self-center d-flex"><img src="./template/citrojugo.jpg" alt="">
+                                    <div class="text align-self-center d-flex"><img src="./template/citrojugo.jpg"
+                                            alt="">
                                     </div>
                                 </div>
                             </a>
@@ -260,7 +306,8 @@
                             </div>
                             <a href="https://sohex.net/new-dms-hexade230320.sohex.net/login" class="img-pop-up">
                                 <div class="middle">
-                                    <div class="text align-self-center d-flex"><img src="./template/dmssohex.jpg" alt="">
+                                    <div class="text align-self-center d-flex"><img src="./template/dmssohex.jpg"
+                                            alt="">
                                     </div>
                                 </div>
                             </a>
@@ -278,7 +325,8 @@
                             </div>
                             <a href="https://xehos.com/" target="_blank" class="img-pop-up">
                                 <div class="middle">
-                                    <div class="text align-self-center d-flex"><img src="./template/autolavado.jpg" alt="">
+                                    <div class="text align-self-center d-flex"><img src="./template/autolavado.jpg"
+                                            alt="">
                                     </div>
                                 </div>
                             </a>
@@ -317,7 +365,8 @@
                             </div>
                             <a href="https://consultapublica.col.gob.mx/" class="img-pop-up">
                                 <div class="middle">
-                                    <div class="text align-self-center d-flex"><img src="./template/colimaescudo.jpg" alt="">
+                                    <div class="text align-self-center d-flex"><img src="./template/colimaescudo.jpg"
+                                            alt="">
                                     </div>
                                 </div>
                             </a>
@@ -344,6 +393,25 @@
                         <div class="p-inner">
                             <h4>Zintroalum</h4>
                             <div class="cat">Fullstack - PHP/Codeigniter</div>
+                        </div>
+                    </div>
+                    <div class="single-portfolio col-sm-4 all websites">
+                        <div class="relative">
+                            <div class="thumb">
+                                <div class="overlay overlay-bg"></div>
+                                <img class="image img-fluid" src="./template/uteg.jpg" alt="">
+                            </div>
+                            <a href="#"
+                                target="_blank" class="img-pop-up">
+                                <div class="middle">
+                                    <div class="text align-self-center d-flex"><img src="./template/uteg.jpg" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="p-inner">
+                            <h4>UTEG</h4>
+                            <div class="cat">Fullstack - PHP/Laravel</div>
                         </div>
                     </div>
                     <!-- fin row -->
@@ -403,7 +471,8 @@
                         <h3>Desarrollador Fullstack</h3>
                         <p class="text-white">
                             Actualmente trabajo como desarrollador Fullstack en la empresa <b>SOHEX</b>.
-                            Empresa dedicada a brindar servicios de Tecnologia, uno de sus principales clientes son las agencias <b> Ford</b>.
+                            Empresa dedicada a brindar servicios de Tecnologia, uno de sus principales clientes son las
+                            agencias <b> Ford</b>.
                         </p>
                         <hr>
                         <span class="school text-white">Sohex</span>
@@ -435,7 +504,8 @@
                         <span class="date"><span class="icon-calendar"></span> 2016 - 2019 Diciembre</span>
                         <h3>Desarrollador Fullstack</h3>
                         <p class="text-white">
-                            Trabajé como desarrollador Fullstack medio tiempo en la empresa <b>Fourdreams</b> creando sitios a la medida, sistemas web y mantenimiento de proyectos existentes.
+                            Trabajé como desarrollador Fullstack medio tiempo en la empresa <b>Fourdreams</b> creando
+                            sitios a la medida, sistemas web y mantenimiento de proyectos existentes.
                         </p>
                         <hr>
                         <span class="school text-white">
@@ -444,14 +514,20 @@
                     </div>
                     <div class="resume-item mb-4">
                         <span class="date"><span class="icon-calendar"></span> 2014 - 2016</span>
-                        <h3>Desarrollador Trainee/Aprendiz</h3>
+                        <h3>Trainee</h3>
                         <p class="text-white">
-                            Trabajé como desarrollador Trainee en dependencias como STJ de colima, 
-                            Proyecto de Ventanilla Unica y La agencia de Mazda dando soporte y mantenimiento a Sitios.
+                            Trabajé como desarrollador Fullstack Trainee en startups y dependencias de gobierno.
+                            Las actividades desempeñadas abarcaron desde analisis desarrollo y mantenimiento de sistemas
+                            y sitios web.
+                        <ul class="text-white">
+                            <li>STJ de colima</li>
+                            <li>4 Tools</li>
+                            <li>Agencia de Mazda</li>
+                        </ul>
                         </p>
                         <hr>
                         <span class="school text-white">
-                            <a target="_blank" href="https://www.fourdreams.mx/">Fourdreams</a>
+                            <a target="_blank" href="#">Trainee</a>
                         </span>
                     </div>
                 </div>
@@ -459,35 +535,7 @@
         </div>
     </section>
     <!-- Experiencia fin-->
-    <!-- Sobre mi -->
-    <section class="site-section " id="section-aboutmyself">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 mb-2">
-                    <div class="section-heading text-center">
-                        <h2>Sobre mi </h2>
-                    </div>
-                </div>
-                <div class="col-md-12 mb-2">
-                    <p class="text-white">
-                        Cuento con mas de 6 años de experiencia en el desarollo de aplicaciones web, actualmente trabajo
-                        con PHP para backend y React para frontend.
-                    </p>
-                    <p class="text-white">
-                        Los framework utilizados con PHP son <b> Laravel y Codeigniter</b>, sin embargo he tenido
-                        contacto con otros lenguajes como <b> Nodejs y Mongodb</b> para proyectos independientes y
-                        empresas.
-                    </p>
-                    <p class="text-white">
-                        Disfruto trabajar tanto en frontend como en backend. Me considero una persona proactiva,
-                        resolutiva, con
-                        interés de aprender nuevas tecnologías y mejores prácticas para aplicar proyectos futuros.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Sobre mi, fin -->
+
     <!-- skills -->
     <section class="site-section" id="section-skills">
         <div class="container">
@@ -496,6 +544,109 @@
                     <div class="section-heading text-center">
                         <h2>Habilidades</h2>
                     </div>
+                </div>
+            </div>
+            <div class="row mb-4 text-white">
+                <div class="col-md-12">
+                    <h3>Backend</h3>
+                </div>
+                <div class="col-md-1">
+                    <span style="font-size: 3em;">
+                        <i class="fab fa-php"></i>
+                    </span>
+                    <span>Php</span>
+                </div>
+                <div class="col-md-1">
+                    <span style="font-size: 3em;">
+                        <i class="fab fa-node"></i>
+                    </span>
+                    <span>Nodejs</span>
+                </div>
+            </div>
+            <div class="row mb-4 text-white">
+                <div class="col-md-12">
+                    <h3>Frontend</h3>
+                </div>
+                <div class="col-md-1">
+                    <span style="font-size: 3em;">
+                        <i class="fab fa-bootstrap"></i>
+                    </span>
+                    <span>Bootstrap</span>
+                </div>
+                <div class="col-md-1">
+                    <span style="font-size: 3em;">
+                        <i class="fab fa-sass"></i>
+                    </span>
+                    <span>Sass</span>
+                </div>
+                <div class="col-md-1">
+                    <span style="font-size: 3em;">
+                        <i class="fab fa-react"></i>
+                    </span>
+                    <span>Reactjs</span>
+                </div>
+                <div class="col-md-1">
+                    <span style="font-size: 3em;">
+                        <i class="fab fa-html5"></i>
+                    </span>
+                    <span>Html5</span>
+                </div>
+                <div class="col-md-1">
+                    <span style="font-size: 3em;">
+                        <i class="fab fa-css3-alt"></i>
+                    </span>
+                    <span>Css3</span>
+                </div>
+                <div class="col-md-1">
+                    <span style="font-size: 3em;">
+                        <i class="fab fa-js"></i>
+                    </span>
+                    <span>Javascript</span>
+                </div>
+            </div>
+            <div class="row mb-4 text-white">
+                <div class="col-md-12">
+                    <h3>Diseño web</h3>
+                </div>
+                <div class="col-md-1">
+                    <span style="font-size: 3em;">
+                        <i class="far fa-image"></i>
+                    </span>
+                    <span>Photoshop</span>
+                </div>
+            </div>
+            <div class="row mb-4 text-white">
+                <div class="col-md-12">
+                    <h3>Base de datos</h3>
+                </div>
+                <div class="col-md-1">
+                    <span style="font-size: 3em;">
+                        <i class="fas fa-database"></i>
+                    </span>
+                    <span>Mongodb</span>
+                </div>
+                <div class="col-md-1">
+                    <span style="font-size: 3em;">
+                        <i class="fas fa-database"></i>
+                    </span>
+                    <span>Mysql</span>
+                </div>
+            </div>
+            <div class="row mb-4 text-white">
+                <div class="col-md-12">
+                    <h3>Otros</h4>
+                </div>
+                <div class="col-md-1">
+                    <span style="font-size: 3em;">
+                        <i class="fab fa-git-square"></i>
+                    </span>
+                    <span>Github</span>
+                </div>
+                <div class="col-md-1">
+                    <span style="font-size: 3em;">
+                        <i class="fas fa-terminal"></i>
+                    </span>
+                    <span>Linux</span>
                 </div>
             </div>
         </div>

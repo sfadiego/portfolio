@@ -853,3 +853,12 @@ a:hover, a:focus, a:active {
     letter-spacing: .2rem;
     color: rgba(255, 255, 255, 0.5) !important;
 }
+
+/* custom navbar */
+.fixed-top {
+    position: fixed !important;
+    top: 0 !important;
+    right: 0;
+    left: 0;
+    z-index: 1030 !important;
+}
